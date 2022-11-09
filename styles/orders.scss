@@ -1,0 +1,70 @@
+.orders_page {
+  .orders {
+    width: 100%;
+    margin: 50px 0 40px;
+    display: grid;
+    grid-template: auto / repeat(auto-fill, minmax(380px, 1fr));
+    justify-content: space-between;
+    grid-gap: 20px;
+
+    .card {
+      overflow: hidden;
+      position: relative;
+      border-radius: 12px;
+
+      .card-body {
+        padding: 30px;
+        box-sizing: border-box;
+
+        .btn {
+          position: absolute;
+          top: -3px;
+          right: 25px;
+          padding: 0 12px;
+          height: 45px;
+        }
+
+        .product-image {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+
+        .table {
+          margin-bottom: 50px;
+
+          tbody {
+            tr td {
+              &:first-child {
+                width: 70px;
+              }
+
+              .title:hover {
+                text-decoration: none;
+              }
+
+              vertical-align: middle;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+          }
+        }
+
+        .price {
+          position: absolute;
+          bottom: 15px;
+          right: 22px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .orders_page {
+    .orders {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+}

@@ -1,0 +1,47 @@
+
+.users {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .data {
+    overflow: auto;
+    margin: 50px auto;
+    max-width: 950px;
+    
+    table {
+      width: 100%;
+      border: 1px solid rgb(221, 221, 221);
+      margin: 0;
+  
+      .user-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+
+      thead, tbody {
+        tr {
+          td, th {
+            white-space: nowrap;
+
+            .isDisabled {
+              visibility: hidden;
+            }
+          }
+        }
+      }
+
+      tbody {
+        td {
+          a {
+            svg {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

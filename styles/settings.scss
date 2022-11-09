@@ -1,0 +1,25 @@
+.settings {
+  margin-bottom: 20px;
+
+
+  .btn-group {
+    width: 340px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    float: right;
+    margin-bottom: 20px;
+
+    .btn {
+      width: 160px;
+      border-radius: 5px !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .btn-group {
+    justify-content: center;
+  }
+}
